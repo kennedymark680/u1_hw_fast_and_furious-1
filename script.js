@@ -19,27 +19,26 @@ window.onload = function (event) {
   // Do all of your work inside the window.onload function (in other words, here!)
 
   // Part 1
-  document.getElementById('main-title').innerText = "Hi there I'm DOM Toretto"
+  document.querySelector('#main-title').innerText = 'Hello'
 
   // Part 2
   document.querySelector('body').style.backgroundColor = 'blue'
 
   // Part 3
-  document
-    .querySelector('#favorite-things')
-    .childNodes[11].remove()
+  document.querySelector('#favorite-things').childNodes[11].remove()
 
-    // Part 4
+  // Part 4
+  document
     .querySelectorAll('.special-title')
-    .forEach((elm) => (elm.style.fontSize = '2rem'))
+    .forEach((num) => (num.style.fontSize = '2rem'))
 
   // Part 5
   document.querySelector('#past-races').childNodes[7].remove()
 
   // Part 6
-  const newItem = document.createElement('li')
-  newItem.innerText = 'Philly'
-  document.querySelector('#past-races').appendChild(newItem)
+  const newCity = document.createElement('li')
+  newCity.innerText = 'Philly'
+  document.querySelector('#past-races').appendChild(newCity)
 
   // Part 7
   const newDiv = document.createElement('div')
